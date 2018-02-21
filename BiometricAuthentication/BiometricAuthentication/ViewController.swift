@@ -40,8 +40,18 @@ class ViewController: UIViewController {
         let userdefaults = UserDefaults.standard
         guard userdefaults.string(forKey: kUserKey) != nil && userdefaults.string(forKey: kPasswordKey) != nil else { return }
         
-        LAContext().evaluatePolicy( .deviceOwnerAuthenticationWithBiometrics, localizedReason: "You will pass with the correct Fingerprint", reply: {(success, error) -> Void in
-            success ? self.performSegue(withIdentifier: self.kSegueLoginSuccessfulID, sender: nil) : self.showAlertForError(message: "Error")
+        var messageForBiometricAuthentication = "You will pass with the correct fingerprint."
+        
+        if #available(iOS 11.0, *) {
+            switch LAContext().biometryType {
+            case .typeFaceID: messageForBiometricAuthentication = "Use your face to authenticate."
+            case .typeTouchID: messageForBiometricAuthentication = "Use the correct fingerprint to authenticate."
+            case .none: messageForBiometricAuthentication = ("There is no TouchID or FaceID.")
+            }
+        }
+        
+        LAContext().evaluatePolicy( .deviceOwnerAuthenticationWithBiometrics, localizedReason: messageForBiometricAuthentication, reply: {(success, error) -> Void in
+            success ? self.performSegue(withIdentifier: self.kSegueLoginSuccessfulID, sender: nil) : self.showAlertForError(message: "Not logged")
         })
     }
     
