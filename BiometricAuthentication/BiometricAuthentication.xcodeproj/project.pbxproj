@@ -1,0 +1,573 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B24FE7742020DA1800C75274 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24FE7732020DA1800C75274 /* AppDelegate.swift */; };
+		B24FE7762020DA1800C75274 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24FE7752020DA1800C75274 /* ViewController.swift */; };
+		B24FE7792020DA1800C75274 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B24FE7772020DA1800C75274 /* Main.storyboard */; };
+		B24FE77B2020DA1800C75274 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B24FE77A2020DA1800C75274 /* Assets.xcassets */; };
+		B24FE77E2020DA1800C75274 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B24FE77C2020DA1800C75274 /* LaunchScreen.storyboard */; };
+		B24FE7892020DA1800C75274 /* BiometricAuthenticationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24FE7882020DA1800C75274 /* BiometricAuthenticationTests.swift */; };
+		B24FE7942020DA1800C75274 /* BiometricAuthenticationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24FE7932020DA1800C75274 /* BiometricAuthenticationUITests.swift */; };
+		B24FE7A32020E5BD00C75274 /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B24FE7A22020E58F00C75274 /* LocalAuthentication.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B24FE7852020DA1800C75274 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B24FE7682020DA1800C75274 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B24FE76F2020DA1800C75274;
+			remoteInfo = BiometricAuthentication;
+		};
+		B24FE7902020DA1800C75274 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B24FE7682020DA1800C75274 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B24FE76F2020DA1800C75274;
+			remoteInfo = BiometricAuthentication;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B24FE7702020DA1800C75274 /* BiometricAuthentication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BiometricAuthentication.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B24FE7732020DA1800C75274 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B24FE7752020DA1800C75274 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B24FE7782020DA1800C75274 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B24FE77A2020DA1800C75274 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B24FE77D2020DA1800C75274 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B24FE77F2020DA1800C75274 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B24FE7842020DA1800C75274 /* BiometricAuthenticationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BiometricAuthenticationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B24FE7882020DA1800C75274 /* BiometricAuthenticationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricAuthenticationTests.swift; sourceTree = "<group>"; };
+		B24FE78A2020DA1800C75274 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B24FE78F2020DA1800C75274 /* BiometricAuthenticationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BiometricAuthenticationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B24FE7932020DA1800C75274 /* BiometricAuthenticationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricAuthenticationUITests.swift; sourceTree = "<group>"; };
+		B24FE7952020DA1800C75274 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B24FE7A22020E58F00C75274 /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B24FE76D2020DA1800C75274 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B24FE7A32020E5BD00C75274 /* LocalAuthentication.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B24FE7812020DA1800C75274 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B24FE78C2020DA1800C75274 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B24FE7672020DA1800C75274 = {
+			isa = PBXGroup;
+			children = (
+				B24FE7722020DA1800C75274 /* BiometricAuthentication */,
+				B24FE7872020DA1800C75274 /* BiometricAuthenticationTests */,
+				B24FE7922020DA1800C75274 /* BiometricAuthenticationUITests */,
+				B24FE7712020DA1800C75274 /* Products */,
+				B24FE7A12020E58F00C75274 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B24FE7712020DA1800C75274 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B24FE7702020DA1800C75274 /* BiometricAuthentication.app */,
+				B24FE7842020DA1800C75274 /* BiometricAuthenticationTests.xctest */,
+				B24FE78F2020DA1800C75274 /* BiometricAuthenticationUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B24FE7722020DA1800C75274 /* BiometricAuthentication */ = {
+			isa = PBXGroup;
+			children = (
+				B24FE7732020DA1800C75274 /* AppDelegate.swift */,
+				B24FE7752020DA1800C75274 /* ViewController.swift */,
+				B24FE7772020DA1800C75274 /* Main.storyboard */,
+				B24FE77A2020DA1800C75274 /* Assets.xcassets */,
+				B24FE77C2020DA1800C75274 /* LaunchScreen.storyboard */,
+				B24FE77F2020DA1800C75274 /* Info.plist */,
+			);
+			path = BiometricAuthentication;
+			sourceTree = "<group>";
+		};
+		B24FE7872020DA1800C75274 /* BiometricAuthenticationTests */ = {
+			isa = PBXGroup;
+			children = (
+				B24FE7882020DA1800C75274 /* BiometricAuthenticationTests.swift */,
+				B24FE78A2020DA1800C75274 /* Info.plist */,
+			);
+			path = BiometricAuthenticationTests;
+			sourceTree = "<group>";
+		};
+		B24FE7922020DA1800C75274 /* BiometricAuthenticationUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B24FE7932020DA1800C75274 /* BiometricAuthenticationUITests.swift */,
+				B24FE7952020DA1800C75274 /* Info.plist */,
+			);
+			path = BiometricAuthenticationUITests;
+			sourceTree = "<group>";
+		};
+		B24FE7A12020E58F00C75274 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B24FE7A22020E58F00C75274 /* LocalAuthentication.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B24FE76F2020DA1800C75274 /* BiometricAuthentication */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B24FE7982020DA1800C75274 /* Build configuration list for PBXNativeTarget "BiometricAuthentication" */;
+			buildPhases = (
+				B24FE76C2020DA1800C75274 /* Sources */,
+				B24FE76D2020DA1800C75274 /* Frameworks */,
+				B24FE76E2020DA1800C75274 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BiometricAuthentication;
+			productName = BiometricAuthentication;
+			productReference = B24FE7702020DA1800C75274 /* BiometricAuthentication.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B24FE7832020DA1800C75274 /* BiometricAuthenticationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B24FE79B2020DA1800C75274 /* Build configuration list for PBXNativeTarget "BiometricAuthenticationTests" */;
+			buildPhases = (
+				B24FE7802020DA1800C75274 /* Sources */,
+				B24FE7812020DA1800C75274 /* Frameworks */,
+				B24FE7822020DA1800C75274 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B24FE7862020DA1800C75274 /* PBXTargetDependency */,
+			);
+			name = BiometricAuthenticationTests;
+			productName = BiometricAuthenticationTests;
+			productReference = B24FE7842020DA1800C75274 /* BiometricAuthenticationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B24FE78E2020DA1800C75274 /* BiometricAuthenticationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B24FE79E2020DA1800C75274 /* Build configuration list for PBXNativeTarget "BiometricAuthenticationUITests" */;
+			buildPhases = (
+				B24FE78B2020DA1800C75274 /* Sources */,
+				B24FE78C2020DA1800C75274 /* Frameworks */,
+				B24FE78D2020DA1800C75274 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B24FE7912020DA1800C75274 /* PBXTargetDependency */,
+			);
+			name = BiometricAuthenticationUITests;
+			productName = BiometricAuthenticationUITests;
+			productReference = B24FE78F2020DA1800C75274 /* BiometricAuthenticationUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B24FE7682020DA1800C75274 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Solid Gear";
+				TargetAttributes = {
+					B24FE76F2020DA1800C75274 = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+					};
+					B24FE7832020DA1800C75274 = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B24FE76F2020DA1800C75274;
+					};
+					B24FE78E2020DA1800C75274 = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B24FE76F2020DA1800C75274;
+					};
+				};
+			};
+			buildConfigurationList = B24FE76B2020DA1800C75274 /* Build configuration list for PBXProject "BiometricAuthentication" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B24FE7672020DA1800C75274;
+			productRefGroup = B24FE7712020DA1800C75274 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B24FE76F2020DA1800C75274 /* BiometricAuthentication */,
+				B24FE7832020DA1800C75274 /* BiometricAuthenticationTests */,
+				B24FE78E2020DA1800C75274 /* BiometricAuthenticationUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B24FE76E2020DA1800C75274 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B24FE77E2020DA1800C75274 /* LaunchScreen.storyboard in Resources */,
+				B24FE77B2020DA1800C75274 /* Assets.xcassets in Resources */,
+				B24FE7792020DA1800C75274 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B24FE7822020DA1800C75274 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B24FE78D2020DA1800C75274 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B24FE76C2020DA1800C75274 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B24FE7762020DA1800C75274 /* ViewController.swift in Sources */,
+				B24FE7742020DA1800C75274 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B24FE7802020DA1800C75274 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B24FE7892020DA1800C75274 /* BiometricAuthenticationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B24FE78B2020DA1800C75274 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B24FE7942020DA1800C75274 /* BiometricAuthenticationUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B24FE7862020DA1800C75274 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B24FE76F2020DA1800C75274 /* BiometricAuthentication */;
+			targetProxy = B24FE7852020DA1800C75274 /* PBXContainerItemProxy */;
+		};
+		B24FE7912020DA1800C75274 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B24FE76F2020DA1800C75274 /* BiometricAuthentication */;
+			targetProxy = B24FE7902020DA1800C75274 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B24FE7772020DA1800C75274 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B24FE7782020DA1800C75274 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B24FE77C2020DA1800C75274 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B24FE77D2020DA1800C75274 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B24FE7962020DA1800C75274 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B24FE7972020DA1800C75274 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B24FE7992020DA1800C75274 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q7737AAR99;
+				INFOPLIST_FILE = BiometricAuthentication/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = es.solidgear.BiometricAuthentication;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B24FE79A2020DA1800C75274 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q7737AAR99;
+				INFOPLIST_FILE = BiometricAuthentication/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = es.solidgear.BiometricAuthentication;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B24FE79C2020DA1800C75274 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BiometricAuthenticationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = es.solidgear.BiometricAuthenticationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BiometricAuthentication.app/BiometricAuthentication";
+			};
+			name = Debug;
+		};
+		B24FE79D2020DA1800C75274 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BiometricAuthenticationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = es.solidgear.BiometricAuthenticationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BiometricAuthentication.app/BiometricAuthentication";
+			};
+			name = Release;
+		};
+		B24FE79F2020DA1800C75274 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BiometricAuthenticationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = es.solidgear.BiometricAuthenticationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BiometricAuthentication;
+			};
+			name = Debug;
+		};
+		B24FE7A02020DA1800C75274 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BiometricAuthenticationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = es.solidgear.BiometricAuthenticationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BiometricAuthentication;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B24FE76B2020DA1800C75274 /* Build configuration list for PBXProject "BiometricAuthentication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B24FE7962020DA1800C75274 /* Debug */,
+				B24FE7972020DA1800C75274 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B24FE7982020DA1800C75274 /* Build configuration list for PBXNativeTarget "BiometricAuthentication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B24FE7992020DA1800C75274 /* Debug */,
+				B24FE79A2020DA1800C75274 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B24FE79B2020DA1800C75274 /* Build configuration list for PBXNativeTarget "BiometricAuthenticationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B24FE79C2020DA1800C75274 /* Debug */,
+				B24FE79D2020DA1800C75274 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B24FE79E2020DA1800C75274 /* Build configuration list for PBXNativeTarget "BiometricAuthenticationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B24FE79F2020DA1800C75274 /* Debug */,
+				B24FE7A02020DA1800C75274 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B24FE7682020DA1800C75274 /* Project object */;
+}
