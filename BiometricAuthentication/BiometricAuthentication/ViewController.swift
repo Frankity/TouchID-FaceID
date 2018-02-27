@@ -44,8 +44,8 @@ class ViewController: UIViewController {
         
         if #available(iOS 11.0, *) {
             switch LAContext().biometryType {
-            case .typeFaceID: messageForBiometricAuthentication = "Use your face to authenticate."
-            case .typeTouchID: messageForBiometricAuthentication = "Use the correct fingerprint to authenticate."
+            case .faceID: messageForBiometricAuthentication = "Use your face to authenticate."
+            case .touchID: messageForBiometricAuthentication = "Use the correct fingerprint to authenticate."
             case .none: messageForBiometricAuthentication = ("There is no TouchID or FaceID.")
             }
         }
