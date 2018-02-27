@@ -51,7 +51,7 @@ class ViewController: UIViewController {
         }
         
         LAContext().evaluatePolicy( .deviceOwnerAuthenticationWithBiometrics, localizedReason: messageForBiometricAuthentication, reply: {(success, error) -> Void in
-            success ? self.performSegue(withIdentifier: self.kSegueLoginSuccessfulID, sender: nil) : self.showAlertForError(message: "Not logged")
+            success ? self.authenticate() : self.showAlertForError(message: "Not logged")
         })
     }
     
@@ -64,6 +64,16 @@ class ViewController: UIViewController {
         let userDefaults = UserDefaults.standard
         userDefaults.set(userTextField.text, forKey: kUserKey)
         userDefaults.set(passwordTextField.text, forKey: kPasswordKey)
+    }
+    
+    func authenticate(){
+        let userdefaults = UserDefaults.standard
+        //Here we can check for the credentials, in the current implementation we only check that user and password are not nil.
+        if userdefaults.string(forKey: kUserKey) != nil && userdefaults.string(forKey: kPasswordKey) != nil {
+            self.performSegue(withIdentifier: self.kSegueLoginSuccessfulID, sender: nil)
+        } else {
+            showAlertForError(message: "Incorrect credentials")
+        }
     }
     
     // MARK: - IBActions
